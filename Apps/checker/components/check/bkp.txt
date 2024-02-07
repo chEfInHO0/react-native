@@ -1,0 +1,46 @@
+<View style={styles.pos}>
+      <Text style={styles.title}>Meu primeiro app</Text>
+
+      <States ></States>
+      <Buttons></Buttons>
+
+      <Text style={styles.subtitle}> Lista de pizzas</Text>
+      <CheckList
+        name="Peperonni"
+        price={35.5}
+        ingredients={[
+          "Peperonni",
+          "Cheese",
+          "Tomato sauce",
+          "Pie",
+          "Olive oil",
+        ]}
+        onPress={() => Alert.alert("Peperonni :P")}
+      />
+      <CheckList
+        name="Cheese"
+        price={27.5}
+        ingredients={["Cheese", "Tomato sauce", "Pie", "Olive oil"]}
+        onPress={() => Alert.alert("Cheeeeeeeese :s")}
+      />
+      <CheckList
+        name="Mushroom"
+        price={42.5}
+        originalPrice={52}
+        ingredients={[
+          "Mushroom",
+          "Onions",
+          "Cheese",
+          "Tomato sauce",
+          "Pie",
+          "Olive oil",
+        ]}
+        onPress={() => Alert.alert("Mush mush :3")}
+      />
+      <CheckList
+        name="Chicken"
+        price={30.75}
+        ingredients={["Chicken", "Cheese", "Tomato sauce", "Pie", "Olive oil"]}
+        onPress={() => Alert.alert("Chick :T")}
+      />
+    </View>
